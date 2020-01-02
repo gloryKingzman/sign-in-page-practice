@@ -1,0 +1,250 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #e3f2f3;
+	flex-direction: column;
+	padding: 30px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	background: #3f3d56;
+	margin: auto;
+	position: relative;
+	top: 20vh;
+	width: auto;
+	box-shadow: 0px 30px 25px 5px rgba(17, 17, 17, 0.09);
+	justify-content: center;
+}
+
+section {
+	display: flex;
+	align-self: center;
+}
+
+.side-bg {
+	width: 500px;
+	padding: 20px;
+	transition: all 0.5s ease;
+}
+
+section.bg-hide .side-bg {
+	width: 0px;
+	height: 0px;
+}
+
+
+.container {
+	background: #3f3d56;
+	width: 400px;
+	height: 500px;
+	position: relative;
+	/* top: 20vh; */
+	/* border-radius: 30px; */
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	flex-direction: column;
+
+}
+
+.form {
+	/* background: chartreuse; */
+	width: 300px;
+	height: auto;
+	overflow: hidden;
+}
+
+.form-heading {
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.row {
+	/* background: crimson; */
+	margin-top: 50px;
+	height: 40px;
+	position: relative;
+}
+
+.row input {
+	width: 100%;
+	height: 100%;
+	padding-top: 10px;
+	outline: none;
+	padding-left: 5px;
+	border: none;
+	outline: none;
+	/* background: rgb(247, 245, 245); */
+	font-size: 15px;
+	background: none;
+	color: white;
+}
+
+.form-label label {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	/* text-align: center; */
+	pointer-events: none;
+	border-bottom: 1px solid rgb(124, 124, 124);
+}
+
+.form-label label::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	bottom: -1px;
+	border-bottom: 3px solid rgb(190, 189, 189);
+
+	transform: translateX(100%);
+	transition: transform 0.6s ease;
+
+}
+
+.content-name {
+	font-size: 13px;
+	position: absolute;
+	text-align: center;
+	padding-left: 5px;
+	bottom: 5px;
+	left: 0;
+	/* /transform: translate(-50%, -50%); */
+	transition: all 0.3s ease;
+}
+
+.row input:focus+.form-label .content-name,
+.row input:valid+.form-label .content-name {
+	transform: translateY(-40px);
+
+
+}
+
+.row input:focus+.form-label label::after,
+.row input:valid+.form-label label::after {
+	transform: translateX(0%);
+
+
+}
+
+button {
+	/* text-align: right; */
+	padding: 5px 10px;
+	background: rgb(51, 51, 51);
+	border: none;
+	color: white;
+	font-size: 24px;
+	position: absolute;
+	right: 50px;
+	border-radius: 10px;
+
+}
+
+.sign-in {
+	text-align: right;
+	width: 100px;
+}
+
+
+
+
+
+
+
+/* .container {
+	background: blue;
+	width: 50vw;
+	max-width: 50vw;
+	height: 600px;
+	display: flex;
+	position: relative;
+	top: 100px;
+}
+
+
+.form {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	flex-direction: column;
+}
+
+.form-main {
+	width: 50%;
+	position: absolute;
+	bottom: 0;
+	overflow: hidden;
+
+	border: 1px solid black;
+}
+
+.form-main input {
+	width: 100%;
+	height: 100%;
+	color: rgb(53, 52, 52);
+	padding-top: 30px;
+	font-size: 1em;
+	border: none;
+	outline: none;
+}
+
+.form-main label {
+	position: absolute;
+	bottom: 0px;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	border-bottom: 1px solid black;
+}
+
+.form-main label::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	width: 100%;
+	height: 100%;
+	transform: translateX(-100%);
+	transition: transform 0.5s ease;
+	border-bottom: 3px solid rgb(70, 38, 250);
+}
+
+.content-name {
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	transition: all 0.3s ease;
+}
+
+.form input:focus+.label-name .content-name,
+.form input:valid+.label-name .content-name {
+	transform: translateY(-40px);
+	font-size: 14px;
+}
+
+.form input:focus+.label-name::after,
+.form input:valid+.label-name::after {
+	transform: translateX(0%);
+} */
